@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"015dc4d466225261","x":-280,"y":-220,"width":300,"height":60,"type":"text","text":"hello.c(源程序，文本)"},
+		{"id":"3aab0509c538e80e","x":-200,"y":-60,"width":250,"height":60,"type":"text","text":"hello.i(调用库)"},
+		{"id":"e8cf304bea1be8a2","x":-300,"y":80,"width":250,"height":60,"type":"text","text":"hello.s"},
+		{"id":"a4087fcbf9b7e91e","x":-200,"y":220,"width":250,"height":60,"type":"text","text":"hello.o"},
+		{"id":"689b73b1290e5a23","x":-325,"y":360,"width":250,"height":60,"type":"text","text":"可执行程序"}
+	],
+	"edges":[
+		{"id":"73a5392b9b7ede59","fromNode":"015dc4d466225261","fromSide":"bottom","toNode":"3aab0509c538e80e","toSide":"top","label":"预处理"},
+		{"id":"25f3f1a10fc3b1f9","fromNode":"3aab0509c538e80e","fromSide":"bottom","toNode":"e8cf304bea1be8a2","toSide":"top","label":"汇编"},
+		{"id":"d35a4ea32e232afa","fromNode":"e8cf304bea1be8a2","fromSide":"bottom","toNode":"a4087fcbf9b7e91e","toSide":"top","label":"二进制"},
+		{"id":"7931ff8b559b6bb3","fromNode":"a4087fcbf9b7e91e","fromSide":"bottom","toNode":"689b73b1290e5a23","toSide":"top"}
+	]
+}
