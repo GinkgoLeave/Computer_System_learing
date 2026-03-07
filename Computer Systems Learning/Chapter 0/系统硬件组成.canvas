@@ -4,14 +4,16 @@
 		{"id":"028cc0794d6092a4","type":"text","text":"ALU(算数/逻辑单元)\n实现算数或者逻辑计算\n操作数来自寄存器文件\n结果返回寄存器文件","x":280,"y":-347,"width":250,"height":214},
 		{"id":"aed90f8ce8d9f18f","type":"text","text":"寄存器文件\n相当于菜板，空间有限但是处理高速（相比主存）","x":21,"y":-320,"width":163,"height":160},
 		{"id":"26c10ef17eb8275b","type":"text","text":"高速且需要处理I/O协议","x":0,"y":236,"width":250,"height":50},
-		{"id":"8ed7431cd1fcecdd","type":"text","text":"主存\n临时存储设备，用来存放程序和程序处理的数据","x":880,"y":0,"width":240,"height":120},
 		{"id":"32057514bf9a2ed5","type":"text","text":"I/O 桥 比I/O总线高速","x":354,"y":420,"width":352,"height":52},
-		{"id":"0216b3b6b95d1f80","type":"text","text":"只需要数据传输","x":780,"y":261,"width":250,"height":59},
 		{"id":"d28200642973815e","type":"text","text":"I/O 总线","x":405,"y":640,"width":250,"height":60},
 		{"id":"906163effb9c1a45","type":"text","text":"I/O 设备","x":405,"y":880,"width":250,"height":60},
-		{"id":"a430195057c5ed64","x":-300,"y":-295,"width":260,"height":110,"type":"text","text":"高速缓存存储器\n存储近期可能用到的信息(比去主存读取要快很多)"},
+		{"id":"a430195057c5ed64","type":"text","text":"高速缓存存储器\n存储近期可能用到的信息(比去主存读取要快很多)","x":-300,"y":-295,"width":260,"height":110},
 		{"id":"1e0d4131f256ab34","type":"text","text":"总线接口","x":-22,"y":-30,"width":250,"height":60},
-		{"id":"31fb5cb0ed7dd6b0","type":"text","text":"PC(程序计数器)\n\t 存放要执行的指令的地址","x":-7,"y":-467,"width":220,"height":120}
+		{"id":"31fb5cb0ed7dd6b0","type":"text","text":"PC(程序计数器)\n\t 存放要执行的指令的地址","x":-7,"y":-467,"width":220,"height":120},
+		{"id":"8ed7431cd1fcecdd","type":"text","text":"主存\n临时存储设备，用来存放程序和程序处理的数据","x":880,"y":0,"width":240,"height":120},
+		{"id":"0216b3b6b95d1f80","type":"text","text":"只需要数据传输","x":780,"y":261,"width":250,"height":59},
+		{"id":"61e35e580e226aeb","x":780,"y":640,"width":250,"height":60,"type":"text","text":"网络适配器"},
+		{"id":"49f44d498f4c50a1","x":1200,"y":640,"width":250,"height":60,"type":"text","text":"网络"}
 	],
 	"edges":[
 		{"id":"a1086366922006aa","fromNode":"aed90f8ce8d9f18f","fromSide":"right","toNode":"028cc0794d6092a4","toSide":"left"},
@@ -29,6 +31,10 @@
 		{"id":"e9b01ac4ba279d98","fromNode":"a430195057c5ed64","fromSide":"right","toNode":"aed90f8ce8d9f18f","toSide":"left"},
 		{"id":"d0809f83c463d59e","fromNode":"aed90f8ce8d9f18f","fromSide":"left","toNode":"a430195057c5ed64","toSide":"right"},
 		{"id":"9e479a83a99fba46","fromNode":"1e0d4131f256ab34","fromSide":"left","toNode":"a430195057c5ed64","toSide":"bottom"},
-		{"id":"b38e4f9552901ba4","fromNode":"a430195057c5ed64","fromSide":"bottom","toNode":"1e0d4131f256ab34","toSide":"left"}
+		{"id":"b38e4f9552901ba4","fromNode":"a430195057c5ed64","fromSide":"bottom","toNode":"1e0d4131f256ab34","toSide":"left"},
+		{"id":"4f67f97235127a44","fromNode":"d28200642973815e","fromSide":"right","toNode":"61e35e580e226aeb","toSide":"left"},
+		{"id":"3d644d88f61ce619","fromNode":"61e35e580e226aeb","fromSide":"right","toNode":"49f44d498f4c50a1","toSide":"left"},
+		{"id":"89de97ac2ef73b3d","fromNode":"49f44d498f4c50a1","fromSide":"left","toNode":"61e35e580e226aeb","toSide":"right"},
+		{"id":"f0ae9ef05d580a94","fromNode":"61e35e580e226aeb","fromSide":"left","toNode":"d28200642973815e","toSide":"right"}
 	]
 }
